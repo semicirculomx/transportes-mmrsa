@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes Marmusa | Transporte de Carga en México</title>
+    <meta name="description" content="Más de 30 años de experiencia en transporte de carga en México. Servicio confiable y seguro.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+    ============================================= -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <a href="/" class="header__logo">
+                <div class="header__logo-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="4" fill="#1A3F3A"/>
+                        <path d="M8 28V12H12.5L16 20L19.5 12H24V28H20V18L16 26H16L12 18V28H8Z" fill="white"/>
+                        <path d="M26 12H32V16H30V28H26V12Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="header__logo-text">TRANSPORTES MARMUSA</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="header__nav" id="desktopNav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link">ACERCA DE</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <button class="header__nav-link header__nav-link--dropdown" aria-expanded="false">
+                            SERVICIOS
+                            <svg class="header__nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <ul class="header__dropdown">
+                            <li><a href="#service1">Carga General</a></li>
+                            <li><a href="#service2">Carga Especializada</a></li>
+                            <li><a href="#service3">Logística</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#start" class="header__nav-link">INICIO</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#routes" class="header__nav-link">RUTAS</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#units" class="header__nav-link">UNIDADES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header__actions">
+                <a href="#cotizar" class="btn btn--primary header__cta">
+                    COTIZAR AHORA
+                </a>
+                
+                <!-- Language Selector -->
+                <button class="header__lang" aria-label="Seleccionar idioma">
+                    <span class="header__lang-flag">
+                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Franjas de la bandera mexicana -->
+                            <rect width="6.67" height="14" fill="#006847"/>
+                            <rect x="6.67" width="6.67" height="14" fill="#FFFFFF"/>
+                            <rect x="13.33" width="6.67" height="14" fill="#CE1126"/>
+                            
+                            <!-- Águila simplificada en el centro -->
+                            <g transform="translate(10, 7)">
+                                <!-- Cuerpo del águila -->
+                                <ellipse cx="0" cy="0" rx="2" ry="1.5" fill="#D4A500"/>
+                                <!-- Cabeza -->
+                                <circle cx="0" cy="-1.2" r="0.8" fill="#8B6914"/>
+                                <!-- Ojo -->
+                                <circle cx="0.3" cy="-1.2" r="0.25" fill="#000"/>
+                                <!-- Alas -->
+                                <path d="M -0.8 -0.2 Q -1.8 -0.5 -2.2 0 Q -1.8 0.2 -0.8 0.2" fill="#8B6914"/>
+                                <path d="M 0.8 -0.2 Q 1.8 -0.5 2.2 0 Q 1.8 0.2 0.8 0.2" fill="#8B6914"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <svg class="header__lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="#1E2C33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="header__burger" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MOBILE MENU OVERLAY
+    ============================================= -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__container">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu__header">
+                <a href="/" class="header__logo">
+                    <div class="header__logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="4" fill="#1A3F3A"/>
+                            <path d="M8 28V12H12.5L16 20L19.5 12H24V28H20V18L16 26H16L12 18V28H8Z" fill="white"/>
+                            <path d="M26 12H32V16H30V28H26V12Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span class="header__logo-text">TRANSPORTES MARMUSA</span>
+                </a>
+                <button class="mobile-menu__close" id="menuClose" aria-label="Cerrar menú">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#E74C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Divider -->
+            <div class="mobile-menu__divider"></div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="#about" class="mobile-menu__link">ABOUT US</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__item--dropdown">
+                        <button class="mobile-menu__link mobile-menu__link--dropdown" aria-expanded="false">
+                            SERVICES
+                            <svg class="mobile-menu__arrow" width="12" height="7" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <ul class="mobile-menu__dropdown">
+                            <li><a href="#service1">Carga General</a></li>
+                            <li><a href="#service2">Carga Especializada</a></li>
+                            <li><a href="#service3">Logística</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#start" class="mobile-menu__link">START</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#routes" class="mobile-menu__link">ROUTES</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#units" class="mobile-menu__link">UNITS</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile CTA -->
+            <a href="#cotizar" class="btn btn--primary mobile-menu__cta">
+                COTIZAR AHORA
+            </a>
+
+            <!-- Mobile Footer -->
+            <footer class="mobile-menu__footer">
+                <p>© Transportes Marmusa 2025</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ============================================
+         HERO SECTION
+    ============================================= -->
+    <section class="hero" id="hero">
+        <div class="hero__background">
+            <!-- Sky gradient background -->
+            <div class="hero__sky"></div>
+        </div>
+
+        <div class="hero__container">
+            <!-- Hero Content -->
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    TRANSPORTE DE CARGA EN<br>
+                    <span class="hero__title-highlight">MÉXICO</span> CON MÁS DE<br>
+                    <span class="hero__title-accent">30 AÑOS DE EXPERIENCIA</span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    Conectamos tus productos con todo el país. Servicio de transporte terrestre 
+                    confiable, seguro y con la mejor cobertura nacional.
+                </p>
+
+                <a href="#routes" class="hero__cta">
+                    <span>Ver Rutas</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Hero Image (Truck) -->
+            <div class="hero__image">
+                <img 
+                    src="https://placehold.co/900x400/1A3F3A/FFFFFF?text=Camión+de+Carga+Marmusa" 
+                    alt="Camión de transporte de carga Transportes Marmusa"
+                    class="hero__truck"
+                    loading="eager"
+                >
+            </div>
+        </div>
+
+        <!-- Benefits Bar -->
+        <div class="hero__benefits">
+            <div class="hero__benefits-container">
+                <!-- Benefit 1 -->
+                <div class="hero__benefit">
+                    <div class="hero__benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="hero__benefit-text">
+                        <span class="hero__benefit-label">Entregas</span>
+                        <span class="hero__benefit-value">A Tiempo Garantizado</span>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="hero__benefit-divider"></div>
+
+                <!-- Benefit 2 -->
+                <div class="hero__benefit">
+                    <div class="hero__benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="hero__benefit-text">
+                        <span class="hero__benefit-label">Seguridad</span>
+                        <span class="hero__benefit-value">GPS y Monitoreo 24/7</span>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="hero__benefit-divider"></div>
+
+                <!-- Benefit 3 -->
+                <div class="hero__benefit">
+                    <div class="hero__benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17 20H7C4.79086 20 3 18.2091 3 16V8C3 5.79086 4.79086 4 7 4H17C19.2091 4 21 5.79086 21 8V16C21 18.2091 19.2091 20 17 20Z" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M12 9V15M9 12H15" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="hero__benefit-text">
+                        <span class="hero__benefit-label">Cobertura</span>
+                        <span class="hero__benefit-value">Nacional Completa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT US / QUIÉNES SOMOS SECTION
+    ============================================= -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <!-- Left Column: Text Content -->
+            <div class="about__content">
+                <!-- Tag Pill -->
+                <span class="about__tag">QUIÉNES SOMOS</span>
+
+                <!-- Title -->
+                <h2 class="about__title">
+                    Transportando México desde 1992
+                </h2>
+
+                <!-- Description -->
+                <p class="about__description">
+                    Más de 30 años conectando empresas con sus destinos. Salidas desde el Puerto de Veracruz hacia toda la República Mexicana con servicio de transporte profesional y seguimiento en tiempo real.
+                </p>
+
+                <!-- Subtitle -->
+                <h3 class="about__subtitle">Por qué elegirnos</h3>
+
+                <!-- Benefits List -->
+                <ul class="about__list">
+                    <li class="about__list-item">
+                        <span class="about__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="about__list-text">Experiencia Comprobada</span>
+                    </li>
+                    <li class="about__list-item">
+                        <span class="about__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="about__list-text">Precios Competitivos</span>
+                    </li>
+                    <li class="about__list-item">
+                        <span class="about__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="about__list-text">Atención personalizada en cada envío.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Column: Image with Info Chips -->
+            <div class="about__visual">
+                <div class="about__image-wrapper">
+                    <!-- Main Image -->
+                    <img 
+                        src="https://placehold.co/680x420/E8F4F3/1A3F3A?text=Equipo+Transportes+Marmusa" 
+                        alt="Equipo profesional de Transportes Marmusa"
+                        class="about__image"
+                        loading="lazy"
+                    >
+
+                    <!-- Info Chip: Top Center -->
+                    <div class="about__chip about__chip--top">
+                        <span class="about__chip-icon">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="about__chip-text">Experiencia Comprobada</span>
+                    </div>
+
+                    <!-- Info Chip: Left Middle -->
+                    <div class="about__chip about__chip--left">
+                        <span class="about__chip-icon">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="about__chip-text">Precios Competitivos</span>
+                    </div>
+
+                    <!-- Info Chip: Right Middle -->
+                    <div class="about__chip about__chip--right">
+                        <span class="about__chip-icon">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="about__chip-text">Atención personalizada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES / SERVICIOS SECTION
+    ============================================= -->
+    <section class="services" id="services">
+        <div class="services__container">
+            <!-- Section Header -->
+            <header class="services__header">
+                <span class="services__tag">SERVICIOS</span>
+                <h2 class="services__title">
+                    Servicios de Transporte Adaptados a Tu Negocio
+                </h2>
+            </header>
+
+            <!-- Services Grid -->
+            <div class="services__grid">
+                <!-- Card 1: Carga General -->
+                <article class="services__card">
+                    <div class="services__card-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <rect x="4" y="12" width="36" height="24" rx="3" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M4 18H40" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="8" y="22" width="8" height="6" rx="1" fill="#E74C3C"/>
+                            <circle cx="32" cy="25" r="3" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M22 8V12" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 10L18 12" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M28 10L26 12" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">CARGA GENERAL</h3>
+                    <p class="services__card-description">
+                        Transporte de mercancías diversas con la máxima seguridad y eficiencia en tiempos de entrega.
+                    </p>
+                    <a href="#carga-general" class="services__card-link">
+                        <span>Más información</span>
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Card 2: Carga Especializada -->
+                <article class="services__card">
+                    <div class="services__card-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <path d="M6 32V16C6 14.8954 6.89543 14 8 14H28C29.1046 14 30 14.8954 30 16V32" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M30 20H36L40 26V32H30" stroke="#1A3F3A" stroke-width="2" stroke-linejoin="round"/>
+                            <circle cx="12" cy="34" r="4" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="34" cy="34" r="4" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="10" y="18" width="10" height="8" rx="1" fill="#E74C3C"/>
+                            <path d="M24 32H18" stroke="#1A3F3A" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">CARGA ESPECIALIZADA</h3>
+                    <p class="services__card-description">
+                        Equipos especiales para mercancías que requieren condiciones específicas de transporte.
+                    </p>
+                    <a href="#carga-especializada" class="services__card-link">
+                        <span>Más información</span>
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Card 3: Logística Integral -->
+                <article class="services__card">
+                    <div class="services__card-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <rect x="6" y="8" width="16" height="12" rx="2" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="22" y="8" width="16" height="12" rx="2" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="6" y="24" width="16" height="12" rx="2" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="22" y="24" width="16" height="12" rx="2" fill="#E74C3C" fill-opacity="0.2" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M26 28L29 31L34 26" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="14" cy="14" r="2" fill="#1A3F3A"/>
+                            <circle cx="30" cy="14" r="2" fill="#1A3F3A"/>
+                            <circle cx="14" cy="30" r="2" fill="#1A3F3A"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">LOGÍSTICA INTEGRAL</h3>
+                    <p class="services__card-description">
+                        Gestión completa de la cadena de suministro desde el origen hasta el destino final.
+                    </p>
+                    <a href="#logistica" class="services__card-link">
+                        <span>Más información</span>
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Card 4: Rastreo en Tiempo Real -->
+                <article class="services__card">
+                    <div class="services__card-icon">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="16" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="22" cy="22" r="10" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="22" cy="22" r="4" fill="#E74C3C"/>
+                            <path d="M22 2V6" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 38V42" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M42 22H38" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6 22H2" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">RASTREO EN TIEMPO REAL</h3>
+                    <p class="services__card-description">
+                        Monitoreo GPS 24/7 para que siempre sepas dónde está tu mercancía.
+                    </p>
+                    <a href="#rastreo" class="services__card-link">
+                        <span>Más información</span>
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         COVERAGE / RUTAS SECTION
+    ============================================= -->
+    <section class="coverage" id="routes">
+        <div class="coverage__container">
+            <!-- Section Header -->
+            <header class="coverage__header">
+                <span class="coverage__tag">Transportes Marmusa Coverage</span>
+                <h2 class="coverage__title">
+                    Conectamos Veracruz con Todo México
+                </h2>
+            </header>
+
+            <!-- Main Content: Map + Routes -->
+            <div class="coverage__content">
+                <!-- Left Column: Main Routes -->
+                <div class="coverage__routes coverage__routes--main">
+                    <h3 class="coverage__routes-title">Rutas Principales</h3>
+                    <ul class="coverage__list">
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Veracruz → Puebla</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">CDMX</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Guadalajara</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Monterrey</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Querétaro</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Mazatlán</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Toluca</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Center: Map -->
+                <div class="coverage__map">
+                    <div class="coverage__map-wrapper">
+                        <!-- Mexico Map Container with Real SVG -->
+                        <div class="coverage__map-container">
+                            <!-- Real Mexico SVG Map -->
+                            <img src="assets/mx.svg" alt="Mapa de México" class="coverage__map-img" />
+                            
+                            <!-- Overlay SVG for routes and pins -->
+                            <svg class="coverage__map-overlay" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Glow filter for routes -->
+                                <defs>
+                                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                    <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%">
+                                        <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Route lines with glow effect -->
+                                <!-- Veracruz to CDMX to Guadalajara -->
+                                <path class="coverage__map-route" d="M550 370 Q510 370 465 370 Q410 350 355 320" stroke="#2DA3FF" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.4" filter="url(#glow)"/>
+                                <path class="coverage__map-route" d="M550 370 Q510 370 465 370 Q410 350 355 320" stroke="#F47B20" stroke-width="6" stroke-linecap="round" fill="none">
+                                    <animate attributeName="stroke-dasharray" values="0 1000;1000 0" dur="3s" repeatCount="1" fill="freeze"/>
+                                </path>
+                                
+                                <!-- CDMX to Guadalajara -->
+                                <path class="coverage__map-route" d="M465 370 Q410 345 355 320" stroke="#2DA3FF" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.4" filter="url(#glow)"/>
+                                <path class="coverage__map-route" d="M465 370 Q410 345 355 320" stroke="#F47B20" stroke-width="6" stroke-linecap="round" fill="none"/>
+                                
+                                <!-- Veracruz to Monterrey -->
+                                <path class="coverage__map-route" d="M550 370 Q500 320 460 280 Q440 260 420 240" stroke="#2DA3FF" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.4" filter="url(#glow)"/>
+                                <path class="coverage__map-route" d="M550 370 Q500 320 460 280 Q440 260 420 240" stroke="#F47B20" stroke-width="6" stroke-linecap="round" fill="none"/>
+                                
+                                <!-- CDMX to Querétaro -->
+                                <path class="coverage__map-route" d="M465 370 Q435 345 400 320" stroke="#2DA3FF" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.4" filter="url(#glow)"/>
+                                <path class="coverage__map-route" d="M465 370 Q435 345 400 320" stroke="#F47B20" stroke-width="5" stroke-linecap="round" fill="none"/>
+                                
+                                <!-- To Mazatlán -->
+                                <path class="coverage__map-route" d="M355 320 Q335 295 310 265" stroke="#2DA3FF" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.4" filter="url(#glow)"/>
+                                <path class="coverage__map-route" d="M355 320 Q335 295 310 265" stroke="#F47B20" stroke-width="5" stroke-linecap="round" fill="none"/>
+                                
+                                <!-- To Mérida/Cancún -->
+                                <path class="coverage__map-route" d="M550 370 Q600 360 650 345 Q680 335 750 325" stroke="#2DA3FF" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.4" filter="url(#glow)"/>
+                                <path class="coverage__map-route" d="M550 370 Q600 360 650 345 Q680 335 750 325" stroke="#F47B20" stroke-width="5" stroke-linecap="round" fill="none"/>
+                                
+                              
+                                <!-- City pins with labels -->
+                                <!-- Veracruz (Origin) - Main Hub -->
+                                <g class="coverage__pin coverage__pin--origin" filter="url(#pinShadow)">
+                                    <circle cx="550" cy="370" r="28" fill="#F47B20" fill-opacity="0.2">
+                                        <animate attributeName="r" values="20;35;20" dur="2s" repeatCount="indefinite"/>
+                                        <animate attributeName="fill-opacity" values="0.3;0.1;0.3" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle cx="550" cy="370" r="14" fill="#F47B20"/>
+                                    <circle cx="550" cy="370" r="6" fill="#FFFFFF"/>
+                                    <text x="555" y="330" text-anchor="middle" class="coverage__pin-label coverage__pin-label--origin">Veracruz</text>
+                                </g>
+                                
+                                <!-- CDMX -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="465" cy="370" r="11" fill="#F47B20"/>
+                                    <circle cx="465" cy="370" r="5" fill="#FFFFFF"/>
+                                    <text x="465" y="390" text-anchor="middle" class="coverage__pin-label">CDMX</text>
+                                </g>
+                                
+                                <!-- Puebla -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="495" cy="355" r="9" fill="#F47B20"/>
+                                    <circle cx="495" cy="355" r="4" fill="#FFFFFF"/>
+                                    <text x="495" y="345" text-anchor="middle" class="coverage__pin-label">Puebla</text>
+                                </g>
+                                
+                                <!-- Guadalajara -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="355" cy="320" r="11" fill="#F47B20"/>
+                                    <circle cx="355" cy="320" r="5" fill="#FFFFFF"/>
+                                    <text x="355" y="345" text-anchor="middle" class="coverage__pin-label">Guadalajara</text>
+                                </g>
+                                
+                                <!-- Monterrey -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="420" cy="240" r="11" fill="#F47B20"/>
+                                    <circle cx="420" cy="240" r="5" fill="#FFFFFF"/>
+                                    <text x="420" y="230" text-anchor="middle" class="coverage__pin-label">Monterrey</text>
+                                </g>
+                                
+                                <!-- Querétaro -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="400" cy="320" r="9" fill="#F47B20"/>
+                                    <circle cx="400" cy="320" r="4" fill="#FFFFFF"/>
+                                    <text x="400" y="310" text-anchor="middle" class="coverage__pin-label">Querétaro</text>
+                                </g>
+                                
+                                <!-- Mazatlán -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="310" cy="265" r="9" fill="#F47B20"/>
+                                    <circle cx="310" cy="265" r="4" fill="#FFFFFF"/>
+                                    <text x="310" y="255" text-anchor="middle" class="coverage__pin-label">Mazatlán</text>
+                                </g>
+                                
+                                <!-- Mérida -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="700" cy="330" r="9" fill="#F47B20"/>
+                                    <circle cx="700" cy="330" r="4" fill="#FFFFFF"/>
+                                    <text x="700" y="335" text-anchor="middle" class="coverage__pin-label">Mérida</text>
+                                </g>
+                                
+                                <!-- Cancún -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="750" cy="325" r="9" fill="#F47B20"/>
+                                    <circle cx="750" cy="325" r="4" fill="#FFFFFF"/>
+                                    <text x="750" y="335" text-anchor="middle" class="coverage__pin-label">Cancún</text>
+                                </g>
+                                
+                                <!-- Toluca -->
+                                <g class="coverage__pin" filter="url(#pinShadow)">
+                                    <circle cx="445" cy="365" r="8" fill="#F47B20"/>
+                                    <circle cx="445" cy="365" r="3.5" fill="#FFFFFF"/>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        <!-- Map Legend -->
+                        <div class="coverage__legend">
+                            <div class="coverage__legend-item">
+                                <span class="coverage__legend-dot coverage__legend-dot--origin"></span>
+                                <span>Puerto de Veracruz (Origen)</span>
+                            </div>
+                            <div class="coverage__legend-item">
+                                <span class="coverage__legend-dot"></span>
+                                <span>Destinos principales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Secondary Routes -->
+                <div class="coverage__routes coverage__routes--secondary">
+                    <h3 class="coverage__routes-title">También servicio a</h3>
+                    <ul class="coverage__list">
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Aguascalientes</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Cancún</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">León</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">Mérida</span>
+                        </li>
+                        <li class="coverage__item">
+                            <span class="coverage__item-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="coverage__item-text">San Luis Potosí</span>
+                        </li>
+                        <li class="coverage__item coverage__item--more">
+                            <span class="coverage__item-text">y más destinos...</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="coverage__cta">
+                <a href="#cotizar" class="btn btn--accent">
+                    ¿Necesitas otra ruta?
+                </a>
+                <a href="#contacto" class="coverage__cta-link">
+                    <span>Consúltanos</span>
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FLEET / PARQUE VEHICULAR SECTION
+    ============================================= -->
+    <section class="fleet" id="units">
+        <div class="fleet__container">
+            <!-- Left Column: Image -->
+            <div class="fleet__visual">
+                <div class="fleet__image-wrapper">
+                    <!-- Decorative Circle -->
+                    <div class="fleet__circle"></div>
+                    <!-- Truck Image -->
+                    <img 
+                        src="https://placehold.co/560x380/1A3F3A/FFFFFF?text=Tractocamión+Moderno" 
+                        alt="Tractocamión moderno de la flota Transportes Marmusa"
+                        class="fleet__image"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+
+            <!-- Right Column: Content -->
+            <div class="fleet__content">
+                <!-- Tag -->
+                <span class="fleet__tag">PARQUE VEHICULAR</span>
+
+                <!-- Title -->
+                <h2 class="fleet__title">
+                    Flota Moderna y Equipada
+                </h2>
+
+                <!-- Subtitle -->
+                <p class="fleet__subtitle">
+                    +60 unidades propias constantemente renovadas
+                </p>
+
+                <!-- Features List -->
+                <ul class="fleet__list">
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">20 tractocamiones 2006–2017</span>
+                    </li>
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">40 remolques plataforma/portacontenedores 40'</span>
+                    </li>
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">24 remolques caja seca 48' y 53'</span>
+                    </li>
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">Equipos especializados: Low boy, rabón, unidades clima controlado</span>
+                    </li>
+                </ul>
+
+                <!-- Note -->
+                <p class="fleet__note">
+                    Mantenimiento preventivo garantizado en cada unidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         VENTAJAS / ADVANTAGES SECTION
+    ============================================= -->
+    <section class="advantages" id="ventajas">
+        <div class="advantages__container">
+            <!-- Section Header -->
+            <header class="advantages__header">
+                <span class="advantages__tag">VENTAJAS</span>
+                <h2 class="advantages__title">
+                    ¿Por Qué Transportes Marmusa?
+                </h2>
+            </header>
+
+            <!-- Advantages Grid -->
+            <div class="advantages__grid">
+                <!-- Card 1: 30+ Años de Experiencia -->
+                <article class="advantages__card">
+                    <div class="advantages__card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="16" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M20 10V20L26 26" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="20" cy="20" r="3" fill="#E74C3C"/>
+                            <path d="M20 4V7" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 33V36" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 20H7" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M33 20H36" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__card-title">30+ Años de Experiencia</h3>
+                    <p class="advantages__card-description">
+                        Tres décadas transportando con certeza, no improvisamos.
+                    </p>
+                </article>
+
+                <!-- Card 2: Precios Justos -->
+                <article class="advantages__card">
+                    <div class="advantages__card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="4" y="8" width="32" height="24" rx="3" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M4 14H36" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="28" cy="24" r="4" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M20 24C20 21.7909 21.7909 20 24 20" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="8" y="22" width="8" height="4" rx="1" fill="#E74C3C"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__card-title">Precios Justos</h3>
+                    <p class="advantages__card-description">
+                        Tarifas transparentes, sin costos ocultos.
+                    </p>
+                </article>
+
+                <!-- Card 3: Atención al Cliente -->
+                <article class="advantages__card">
+                    <div class="advantages__card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M8 30V14C8 10.6863 10.6863 8 14 8H26C29.3137 8 32 10.6863 32 14V22C32 25.3137 29.3137 28 26 28H14" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 30L14 28" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15" cy="18" r="2" fill="#E74C3C"/>
+                            <circle cx="20" cy="18" r="2" fill="#1A3F3A"/>
+                            <circle cx="25" cy="18" r="2" fill="#1A3F3A"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__card-title">Atención al Cliente</h3>
+                    <p class="advantages__card-description">
+                        Respuestas rápidas, contacto directo con tu ejecutivo.
+                    </p>
+                </article>
+
+                <!-- Card 4: Tecnología GPS -->
+                <article class="advantages__card">
+                    <div class="advantages__card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="18" r="12" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="20" cy="18" r="6" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="20" cy="18" r="2" fill="#E74C3C"/>
+                            <path d="M20 2V6" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 30V34" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6 18H10" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M30 18H34" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 34V38" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="38" r="2" stroke="#1A3F3A" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantages__card-title">Tecnología GPS</h3>
+                    <p class="advantages__card-description">
+                        Monitoreo continuo con actualizaciones cada hora.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT / CONTACTO SECTION
+    ============================================= -->
+    <section class="contact" id="contacto">
+        <div class="contact__container">
+            <!-- Left Column: Contact Info -->
+            <div class="contact__info">
+                <!-- Title -->
+                <h2 class="contact__title">
+                    ¿Listo para Mover Tu Carga?
+                </h2>
+
+                <!-- Subtitle -->
+                <p class="contact__subtitle">
+                    30 años nos respaldan. Transporte seguro y puntual para tu negocio.
+                </p>
+
+                <!-- Card 1: Solicitar Cotización -->
+                <div class="contact__card">
+                    <div class="contact__card-icon">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                            <rect x="6" y="8" width="28" height="24" rx="3" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M6 14H34" stroke="#1A3F3A" stroke-width="2"/>
+                            <circle cx="20" cy="22" r="6" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M17 22L19 24L23 20" stroke="#1A8A7A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="30" cy="12" r="5" fill="#E74C3C"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact__card-title">SOLICITAR COTIZACIÓN</h3>
+                    <p class="contact__card-text">Llamar (229) 934-3620</p>
+                </div>
+
+                <!-- Card 2: Tiempo de Oficina -->
+                <div class="contact__card">
+                    <div class="contact__card-icon">
+                        <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="14" stroke="#1A3F3A" stroke-width="2"/>
+                            <path d="M20 10V20L27 27" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="20" cy="20" r="3" fill="#E74C3C"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact__card-title">TIEMPO DE OFICINA</h3>
+                    <p class="contact__card-text">Lunes a Viernes 8AM–6PM | Sábados 9AM–2PM</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="contact__form-wrapper">
+                <form class="contact__form" id="contactForm">
+                    <h3 class="contact__form-title">¿Cómo podemos ayudar?</h3>
+
+                    <!-- Name Field -->
+                    <div class="contact__form-group">
+                        <input
+                            type="text"
+                            class="contact__input"
+                            placeholder="Nombre"
+                            name="nombre"
+                            required
+                            aria-label="Nombre completo"
+                        />
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="contact__form-group">
+                        <input
+                            type="email"
+                            class="contact__input"
+                            placeholder="Correo electrónico"
+                            name="email"
+                            required
+                            aria-label="Correo electrónico"
+                        />
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div class="contact__form-group">
+                        <input
+                            type="text"
+                            class="contact__input"
+                            placeholder="Sujeto"
+                            name="sujeto"
+                            required
+                            aria-label="Sujeto del mensaje"
+                        />
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="contact__form-group">
+                        <textarea
+                            class="contact__textarea"
+                            placeholder="Cuéntanos algunas palabras..."
+                            name="mensaje"
+                            rows="6"
+                            required
+                            aria-label="Tu mensaje"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="contact__btn">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROCESO / PROCESS SECTION
+    ============================================= -->
+    <section class="process" id="proceso">
+        <div class="process__container">
+            <!-- Section Header -->
+            <header class="process__header">
+                <span class="process__tag">PROCESO</span>
+                <h2 class="process__title">
+                    Envía Tu Carga en 3 Pasos
+                </h2>
+            </header>
+
+            <!-- Process Cards Grid -->
+            <div class="process__grid">
+                <!-- Card 1: Cotiza -->
+                <article class="process__card">
+                    <div class="process__card-image">
+                        <img
+                            src="https://placehold.co/320x210/1A8A7A/FFFFFF?text=Cotización"
+                            alt="Solicita tu cotización"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="process__card-content">
+                        <h3 class="process__card-title">COTIZA</h3>
+                        <p class="process__card-description">
+                            Respuesta en menos de 2 horas
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 2: Programamos -->
+                <article class="process__card">
+                    <div class="process__card-image">
+                        <img
+                            src="https://placehold.co/320x210/1A8A7A/FFFFFF?text=Programación"
+                            alt="Coordinamos tu envío"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="process__card-content">
+                        <h3 class="process__card-title">PROGRAMAMOS</h3>
+                        <p class="process__card-description">
+                            Coordinamos recolección y ruta
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 3: Entregamos -->
+                <article class="process__card">
+                    <div class="process__card-image">
+                        <img
+                            src="https://placehold.co/320x210/1A8A7A/FFFFFF?text=Entrega"
+                            alt="Entrega confirmada"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="process__card-content">
+                        <h3 class="process__card-title">ENTREGAMOS</h3>
+                        <p class="process__card-description">
+                            Rastreo en tiempo real hasta destino
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Decorative line for mobile -->
+                <div class="process__line" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER / CONTACTO SECTION
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer__background" style="background-image: url('https://placehold.co/1440x800/0F1726/0F1726?text=Terminal+Logística');">
+            <div class="footer__overlay"></div>
+        </div>
+
+        <div class="footer__container">
+            <!-- Contact Bar Top -->
+            <div class="footer__contact-bar">
+                <!-- Item 1: Location -->
+                <div class="footer__contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
+                        <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                    </svg>
+                    <p class="footer__contact-bar-text"><b>DIRECCIÓN:</b> Atiende Norte #446, Col. Miguel Alemán, Veracruz, Ver</p>
+                </div>
+
+                <!-- Item 2: Email 1 -->
+                <div class="footer__contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <p class="footer__contact-bar-text"><b>CORREO:</b> ventas@transportesmarmusa.com.mx</p>
+                </div>
+
+                <!-- Item 3: Email 2 -->
+                <div class="footer__contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <p class="footer__contact-bar-text"><b>CORREO:</b> trafico@transportesmarmusa.com.mx</p>
+                </div>
+
+                <!-- Item 4: Phone -->
+                <div class="footer__contact-item">
+                    <svg width="20" height="40" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
+                        <path d="M6.54 5c.06.89.3 1.76.72 2.54.08.14.05.32-.08.41l-1.44.72c.46 1.29 1.14 2.49 2.02 3.56l.88-1.14c.07-.08.18-.1.28-.05.79.42 1.65.67 2.54.72h.08c.16 0 .29.13.29.29v1.52c0 .16-.13.29-.29.29C9.5 22 2 14.5 2 5.52 2 5.36 2.13 5.23 2.29 5.23h1.52c.16 0 .29.13.29.29.05.89.3 1.75.72 2.54.05.09.03.21-.06.28l-1.44.72z"/>
+                    </svg>
+                    <p class="footer__contact-bar-text"><b>TELÉFONO:</b> (229) 934-3620 | (229) 196-0137 | (229) 939-6316</p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer__divider"></div>
+
+            <!-- Main Content: 3 Columns -->
+            <div class="footer__content">
+                <!-- Column 1: Newsletter -->
+                <div class="footer__column footer__column--newsletter">
+                    <div class="footer__logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="4" fill="#1A8A7A"/>
+                            <path d="M8 28V12H12.5L16 20L19.5 12H24V28H20V18L16 26H16L12 18V28H8Z" fill="white"/>
+                            <path d="M26 12H32V16H30V28H26V12Z" fill="white"/>
+                        </svg>
+                        <span>TM Transportes</span>
+                    </div>
+                    <h4 class="footer__column-title">Nuestro Boletín Informativo</h4>
+                    <form class="footer__newsletter" id="newsletterForm">
+                        <input
+                            type="email"
+                            class="footer__newsletter-input"
+                            placeholder="Tu correo electrónico"
+                            required
+                            aria-label="Correo para newsletter"
+                        />
+                        <button type="submit" class="footer__newsletter-btn">
+                            Suscríbete ahora
+                        </button>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9zm0-16c-3.86 0-7 3.14-7 7s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm3.5 6c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-icon" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.746 0-9.637h3.554v1.365c.426-.658 1.189-1.592 2.894-1.592 2.115 0 3.704 1.382 3.704 4.356v5.508zM5.337 9.433c-1.144 0-1.915-.758-1.915-1.707 0-.956.77-1.708 1.963-1.708 1.192 0 1.915.75 1.937 1.708 0 .949-.745 1.707-1.985 1.707zm1.946 11.019H3.39V9.815h3.893v10.637zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-icon" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 002.856-3.96 9.958 9.958 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Links -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Transportes Marmusa</h4>
+                    <ul class="footer__links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#seguridad">Seguridad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Servicios</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">Caja seca de 53´</a></li>
+                        <li><a href="#services">Plataformas en Full de 40´</a></li>
+                        <li><a href="#services">Plataformas Encordinadas</a></li>
+                        <li><a href="#services">Nodrizas</a></li>
+                        <li><a href="#services">HAZ MAT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__divider"></div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    2025 All Rights Reserved. Transportes Marmusa
+                </p>
+                <a href="#privacy" class="footer__privacy">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
