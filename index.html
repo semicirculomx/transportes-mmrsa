@@ -23,13 +23,8 @@
             <!-- Logo -->
             <a href="/" class="header__logo">
                 <div class="header__logo-icon">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="4" fill="#1A3F3A"/>
-                        <path d="M8 28V12H12.5L16 20L19.5 12H24V28H20V18L16 26H16L12 18V28H8Z" fill="white"/>
-                        <path d="M26 12H32V16H30V28H26V12Z" fill="white"/>
-                    </svg>
+                    <img src="assets/logo-marmusa-header.png" alt="Logo Transportes Marmusa" width="160" height="65" />
                 </div>
-                <span class="header__logo-text">TRANSPORTES MARMUSA</span>
             </a>
 
             <!-- Desktop Navigation -->
@@ -65,7 +60,7 @@
 
             <!-- Header Actions -->
             <div class="header__actions">
-                <a href="#cotizar" class="btn btn--primary header__cta">
+                <a href="https://api.whatsapp.com/send?phone=5212294962323" class="btn btn--primary header__cta">
                     COTIZAR AHORA
                 </a>
                 
@@ -116,13 +111,8 @@
             <div class="mobile-menu__header">
                 <a href="/" class="header__logo">
                     <div class="header__logo-icon">
-                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="4" fill="#1A3F3A"/>
-                            <path d="M8 28V12H12.5L16 20L19.5 12H24V28H20V18L16 26H16L12 18V28H8Z" fill="white"/>
-                            <path d="M26 12H32V16H30V28H26V12Z" fill="white"/>
-                        </svg>
+                        <img src="assets/logo-marmusa-header.png" alt="Logo Transportes Marmusa" width="130" height="55" />
                     </div>
-                    <span class="header__logo-text">TRANSPORTES MARMUSA</span>
                 </a>
                 <button class="mobile-menu__close" id="menuClose" aria-label="Cerrar menú">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -182,8 +172,13 @@
     ============================================= -->
     <section class="hero" id="hero">
         <div class="hero__background">
-            <!-- Sky gradient background -->
-            <div class="hero__sky"></div>
+            <!-- Sky and clouds hero background -->
+            <img 
+                src="assets/cloud-and-sky-hero.png" 
+                alt="Cielo con nubes - fondo del hero"
+                class="hero__sky-image"
+                loading="eager"
+            >
         </div>
 
         <div class="hero__container">
@@ -196,8 +191,7 @@
                 </h1>
                 
                 <p class="hero__subtitle">
-                    Conectamos tus productos con todo el país. Servicio de transporte terrestre 
-                    confiable, seguro y con la mejor cobertura nacional.
+                    Logística terrestre confiable desde Veracruz hacia todo México. Monitoreo GPS 24 horas, 7 días a la semana. Entregas garantizadas.
                 </p>
 
                 <a href="#routes" class="hero__cta">
@@ -211,7 +205,7 @@
             <!-- Hero Image (Truck) -->
             <div class="hero__image">
                 <img 
-                    src="https://placehold.co/900x400/1A3F3A/FFFFFF?text=Camión+de+Carga+Marmusa" 
+                    src="assets/truck-hero-full.png" 
                     alt="Camión de transporte de carga Transportes Marmusa"
                     class="hero__truck"
                     loading="eager"
@@ -232,7 +226,7 @@
                     </div>
                     <div class="hero__benefit-text">
                         <span class="hero__benefit-label">Entregas</span>
-                        <span class="hero__benefit-value">A Tiempo Garantizado</span>
+                        <span class="hero__benefit-value">A tu destino en fecha y hora</span>
                     </div>
                 </div>
 
@@ -284,7 +278,7 @@
 
                 <!-- Title -->
                 <h2 class="about__title">
-                    Transportando México desde 1992
+                    Conectando tu negocio con todo México desde 1992
                 </h2>
 
                 <!-- Description -->
@@ -293,7 +287,7 @@
                 </p>
 
                 <!-- Subtitle -->
-                <h3 class="about__subtitle">Por qué elegirnos</h3>
+                <h3 class="about__subtitle">Comprometidos con tu éxito</h3>
 
                 <!-- Benefits List -->
                 <ul class="about__list">
@@ -329,7 +323,7 @@
                 <div class="about__image-wrapper">
                     <!-- Main Image -->
                     <img 
-                        src="https://placehold.co/680x420/E8F4F3/1A3F3A?text=Equipo+Transportes+Marmusa" 
+                        src="assets/scania-truck.png" 
                         alt="Equipo profesional de Transportes Marmusa"
                         class="about__image"
                         loading="lazy"
@@ -384,22 +378,25 @@
 
             <!-- Services Grid -->
             <div class="services__grid">
-                <!-- Card 1: Carga General -->
+                <!-- Card 1: Contenedores Refrigerados -->
                 <article class="services__card">
                     <div class="services__card-icon">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
-                            <rect x="4" y="12" width="36" height="24" rx="3" stroke="#1A3F3A" stroke-width="2"/>
-                            <path d="M4 18H40" stroke="#1A3F3A" stroke-width="2"/>
-                            <rect x="8" y="22" width="8" height="6" rx="1" fill="#E74C3C"/>
-                            <circle cx="32" cy="25" r="3" stroke="#1A3F3A" stroke-width="2"/>
-                            <path d="M22 8V12" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M16 10L18 12" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M28 10L26 12" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <!-- Refrigerated Container -->
+                            <rect x="6" y="14" width="24" height="18" rx="2" stroke="#1A3F3A" stroke-width="2"/>
+                            <!-- Temperature Indicator Line -->
+                            <path d="M12 14V10M20 14V10M28 14V10" stroke="#1A3F3A" stroke-width="1.5" stroke-linecap="round"/>
+                            <!-- Cold/Frost inside container -->
+                            <path d="M10 18L12 20M14 18L16 20M18 18L20 20M22 18L24 20M26 18L28 20" stroke="#1A8A7A" stroke-width="1.5" stroke-linecap="round"/>
+                            <!-- Truck pulling container -->
+                            <rect x="32" y="18" width="8" height="8" rx="1" fill="#E74C3C"/>
+                            <circle cx="38" cy="29" r="2" stroke="#1A3F3A" stroke-width="1"/>
+                            <path d="M30 22H32" stroke="#1A3F3A" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <h3 class="services__card-title">CARGA GENERAL</h3>
+                    <h3 class="services__card-title">CONTENEDORES REFRIGERADOS</h3>
                     <p class="services__card-description">
-                        Transporte de mercancías diversas con la máxima seguridad y eficiencia en tiempos de entrega.
+                        Transporte especializado de contenedores refrigerados para productos perecederos, alimentos y medicinas a temperatura controlada.
                     </p>
                     <a href="#carga-general" class="services__card-link">
                         <span>Más información</span>
@@ -409,21 +406,30 @@
                     </a>
                 </article>
 
-                <!-- Card 2: Carga Especializada -->
+                <!-- Card 2: Carga Química y Peligrosa -->
                 <article class="services__card">
                     <div class="services__card-icon">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
-                            <path d="M6 32V16C6 14.8954 6.89543 14 8 14H28C29.1046 14 30 14.8954 30 16V32" stroke="#1A3F3A" stroke-width="2"/>
-                            <path d="M30 20H36L40 26V32H30" stroke="#1A3F3A" stroke-width="2" stroke-linejoin="round"/>
-                            <circle cx="12" cy="34" r="4" stroke="#1A3F3A" stroke-width="2"/>
-                            <circle cx="34" cy="34" r="4" stroke="#1A3F3A" stroke-width="2"/>
-                            <rect x="10" y="18" width="10" height="8" rx="1" fill="#E74C3C"/>
-                            <path d="M24 32H18" stroke="#1A3F3A" stroke-width="2"/>
+                            <!-- Warning Diamond -->
+                            <path d="M22 6L32 16L22 26L12 16Z" stroke="#E74C3C" stroke-width="2" fill="none"/>
+                            <!-- Exclamation Mark inside diamond -->
+                            <path d="M22 12V17" stroke="#E74C3C" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="22" cy="22" r="1.5" fill="#E74C3C"/>
+                            <!-- Chemical bottles below -->
+                            <rect x="10" y="28" width="5" height="10" rx="1" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <rect x="17" y="28" width="5" height="10" rx="1" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <rect x="24" y="28" width="5" height="10" rx="1" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <rect x="31" y="28" width="5" height="10" rx="1" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <!-- Bottle caps -->
+                            <rect x="10" y="26" width="5" height="2" fill="#1A3F3A"/>
+                            <rect x="17" y="26" width="5" height="2" fill="#1A3F3A"/>
+                            <rect x="24" y="26" width="5" height="2" fill="#1A3F3A"/>
+                            <rect x="31" y="26" width="5" height="2" fill="#1A3F3A"/>
                         </svg>
                     </div>
-                    <h3 class="services__card-title">CARGA ESPECIALIZADA</h3>
+                    <h3 class="services__card-title">CARGA QUÍMICA Y PELIGROSA</h3>
                     <p class="services__card-description">
-                        Equipos especiales para mercancías que requieren condiciones específicas de transporte.
+                        Transporte especializado de productos químicos, peligrosos y sus residuos con certificaciones y protocolos de seguridad.
                     </p>
                     <a href="#carga-especializada" class="services__card-link">
                         <span>Más información</span>
@@ -447,9 +453,9 @@
                             <circle cx="14" cy="30" r="2" fill="#1A3F3A"/>
                         </svg>
                     </div>
-                    <h3 class="services__card-title">LOGÍSTICA INTEGRAL</h3>
+                    <h3 class="services__card-title">CONSOLIDACIÓN DE CARGA</h3>
                     <p class="services__card-description">
-                        Gestión completa de la cadena de suministro desde el origen hasta el destino final.
+                        Consolidación y desconsolidación de carga contenerizada en sitios seguros con servicios de almacenaje temporal.
                     </p>
                     <a href="#logistica" class="services__card-link">
                         <span>Más información</span>
@@ -459,22 +465,30 @@
                     </a>
                 </article>
 
-                <!-- Card 4: Rastreo en Tiempo Real -->
+                <!-- Card 4: Carga Sobre Dimensionada -->
                 <article class="services__card">
                     <div class="services__card-icon">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
-                            <circle cx="22" cy="22" r="16" stroke="#1A3F3A" stroke-width="2"/>
-                            <circle cx="22" cy="22" r="10" stroke="#1A3F3A" stroke-width="2"/>
-                            <circle cx="22" cy="22" r="4" fill="#E74C3C"/>
-                            <path d="M22 2V6" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M22 38V42" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M42 22H38" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M6 22H2" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <!-- Truck body -->
+                            <rect x="8" y="20" width="14" height="12" rx="1" stroke="#1A3F3A" stroke-width="2"/>
+                            <!-- Truck cabin -->
+                            <rect x="6" y="18" width="6" height="8" rx="1" stroke="#1A3F3A" stroke-width="1.5" fill="#E74C3C" fill-opacity="0.3"/>
+                            <!-- Wheels -->
+                            <circle cx="12" cy="33" r="2" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <circle cx="24" cy="33" r="2" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <!-- Oversized load on top -->
+                            <rect x="10" y="8" width="16" height="10" rx="1" stroke="#F47B20" stroke-width="2" fill="#F47B20" fill-opacity="0.1"/>
+                            <!-- Projection indicators (warning stripes) -->
+                            <line x1="10" y1="8" x2="26" y2="8" stroke="#F47B20" stroke-width="1" stroke-dasharray="2,2"/>
+                            <line x1="10" y1="18" x2="26" y2="18" stroke="#F47B20" stroke-width="1" stroke-dasharray="2,2"/>
+                            <!-- Side projections -->
+                            <path d="M8 12L6 12" stroke="#F47B20" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M26 12L28 12" stroke="#F47B20" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3 class="services__card-title">RASTREO EN TIEMPO REAL</h3>
+                    <h3 class="services__card-title">CARGA SOBRE DIMENSIONADA</h3>
                     <p class="services__card-description">
-                        Monitoreo GPS 24/7 para que siempre sepas dónde está tu mercancía.
+                        Transporte de carga sobredimensionada y proyectada con equipos especiales y permisos autorizados.
                     </p>
                     <a href="#rastreo" class="services__card-link">
                         <span>Más información</span>
@@ -494,7 +508,7 @@
         <div class="coverage__container">
             <!-- Section Header -->
             <header class="coverage__header">
-                <span class="coverage__tag">Transportes Marmusa Coverage</span>
+                <span class="coverage__tag">Cobertura Transportes Marmusa</span>
                 <h2 class="coverage__title">
                     Conectamos Veracruz con Todo México
                 </h2>
@@ -512,7 +526,7 @@
                                     <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                            <span class="coverage__item-text">Veracruz → Puebla</span>
+                            <span class="coverage__item-text">Puebla</span>
                         </li>
                         <li class="coverage__item">
                             <span class="coverage__item-icon">
@@ -552,7 +566,7 @@
                                     <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                            <span class="coverage__item-text">Mazatlán</span>
+                            <span class="coverage__item-text">Edo. México</span>
                         </li>
                         <li class="coverage__item">
                             <span class="coverage__item-icon">
@@ -668,7 +682,7 @@
                                 <g class="coverage__pin" filter="url(#pinShadow)">
                                     <circle cx="310" cy="265" r="9" fill="#F47B20"/>
                                     <circle cx="310" cy="265" r="4" fill="#FFFFFF"/>
-                                    <text x="310" y="255" text-anchor="middle" class="coverage__pin-label">Mazatlán</text>
+                                    <text x="310" y="255" text-anchor="middle" class="coverage__pin-label"></text>
                                 </g>
                                 
                                 <!-- Mérida -->
@@ -682,7 +696,7 @@
                                 <g class="coverage__pin" filter="url(#pinShadow)">
                                     <circle cx="750" cy="325" r="9" fill="#F47B20"/>
                                     <circle cx="750" cy="325" r="4" fill="#FFFFFF"/>
-                                    <text x="750" y="335" text-anchor="middle" class="coverage__pin-label">Cancún</text>
+                                    <text x="750" y="335" text-anchor="middle" class="coverage__pin-label"></text>
                                 </g>
                                 
                                 <!-- Toluca -->
@@ -725,7 +739,7 @@
                                     <path d="M6 12L10 8L6 4" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                            <span class="coverage__item-text">Cancún</span>
+                            <span class="coverage__item-text">Tabasco</span>
                         </li>
                         <li class="coverage__item">
                             <span class="coverage__item-icon">
@@ -785,7 +799,7 @@
                     <div class="fleet__circle"></div>
                     <!-- Truck Image -->
                     <img 
-                        src="https://placehold.co/560x380/1A3F3A/FFFFFF?text=Tractocamión+Moderno" 
+                        src="assets/flotilla.png" 
                         alt="Tractocamión moderno de la flota Transportes Marmusa"
                         class="fleet__image"
                         loading="lazy"
@@ -816,7 +830,7 @@
                                 <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
                             </svg>
                         </span>
-                        <span class="fleet__list-text">20 tractocamiones 2006–2017</span>
+                        <span class="fleet__list-text">Tractocamiones</span>
                     </li>
                     <li class="fleet__list-item">
                         <span class="fleet__list-icon">
@@ -824,7 +838,7 @@
                                 <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
                             </svg>
                         </span>
-                        <span class="fleet__list-text">40 remolques plataforma/portacontenedores 40'</span>
+                        <span class="fleet__list-text">Unidades de 5 y 12 toneladas</span>
                     </li>
                     <li class="fleet__list-item">
                         <span class="fleet__list-icon">
@@ -832,7 +846,7 @@
                                 <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
                             </svg>
                         </span>
-                        <span class="fleet__list-text">24 remolques caja seca 48' y 53'</span>
+                        <span class="fleet__list-text">Caja cerrada de 40 pies</span>
                     </li>
                     <li class="fleet__list-item">
                         <span class="fleet__list-icon">
@@ -840,7 +854,31 @@
                                 <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
                             </svg>
                         </span>
-                        <span class="fleet__list-text">Equipos especializados: Low boy, rabón, unidades clima controlado</span>
+                        <span class="fleet__list-text">Portacontenedores 20 y 40 pies</span>
+                    </li>
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">Plataformas 20 y 40 pies</span>
+                    </li>
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">Camas bajas con cama útil de 40 pies</span>
+                    </li>
+                    <li class="fleet__list-item">
+                        <span class="fleet__list-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1L9.79611 5.52786H14.6085L10.6062 8.44427L12.4023 12.9721L8 10.0557L3.59768 12.9721L5.39379 8.44427L1.39155 5.52786H6.20389L8 1Z" fill="#1A8A7A"/>
+                            </svg>
+                        </span>
+                        <span class="fleet__list-text">Low Boy con cama útil de 40 pies para 45 toneladas</span>
                     </li>
                 </ul>
 
@@ -867,39 +905,38 @@
 
             <!-- Advantages Grid -->
             <div class="advantages__grid">
-                <!-- Card 1: 30+ Años de Experiencia -->
+                <!-- Card 1: Patio propio -->
                 <article class="advantages__card">
                     <div class="advantages__card-icon">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <circle cx="20" cy="20" r="16" stroke="#1A3F3A" stroke-width="2"/>
-                            <path d="M20 10V20L26 26" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="20" cy="20" r="3" fill="#E74C3C"/>
-                            <path d="M20 4V7" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M20 33V36" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M4 20H7" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M33 20H36" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="4" y="10" width="32" height="26" rx="2" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="8" y="14" width="6" height="8" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <rect x="16" y="14" width="6" height="8" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <rect x="24" y="14" width="6" height="8" stroke="#1A3F3A" stroke-width="1.5"/>
+                            <path d="M4 24L4 36M36 24L36 36" stroke="#1A3F3A" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="20" cy="30" r="3" fill="#E74C3C"/>
                         </svg>
                     </div>
-                    <h3 class="advantages__card-title">30+ Años de Experiencia</h3>
+                    <h3 class="advantages__card-title">Patio Propio</h3>
                     <p class="advantages__card-description">
-                        Tres décadas transportando con certeza, no improvisamos.
+                        10 mil m2, bardeado y electrificado, con cámaras de vigilancia las 24 hrs.
                     </p>
                 </article>
 
-                <!-- Card 2: Precios Justos -->
+                <!-- Card 2: Permisos SICT -->
                 <article class="advantages__card">
                     <div class="advantages__card-icon">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="4" y="8" width="32" height="24" rx="3" stroke="#1A3F3A" stroke-width="2"/>
+                            <rect x="4" y="8" width="32" height="24" rx="2" stroke="#1A3F3A" stroke-width="2"/>
                             <path d="M4 14H36" stroke="#1A3F3A" stroke-width="2"/>
-                            <circle cx="28" cy="24" r="4" stroke="#1A3F3A" stroke-width="2"/>
-                            <path d="M20 24C20 21.7909 21.7909 20 24 20" stroke="#1A3F3A" stroke-width="2" stroke-linecap="round"/>
-                            <rect x="8" y="22" width="8" height="4" rx="1" fill="#E74C3C"/>
+                            <path d="M10 18L14 22L22 14" stroke="#1A8A7A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="30" cy="22" r="4" stroke="#E74C3C" stroke-width="2"/>
+                            <path d="M28 22L32 22" stroke="#E74C3C" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3 class="advantages__card-title">Precios Justos</h3>
+                    <h3 class="advantages__card-title">Permisos SICT</h3>
                     <p class="advantages__card-description">
-                        Tarifas transparentes, sin costos ocultos.
+                        Contamos con todos los permisos de las SICT.
                     </p>
                 </article>
 
@@ -935,7 +972,7 @@
                             <circle cx="20" cy="38" r="2" stroke="#1A3F3A" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3 class="advantages__card-title">Tecnología GPS</h3>
+                    <h3 class="advantages__card-title">Tecnología de Monitoreo</h3>
                     <p class="advantages__card-description">
                         Monitoreo continuo con actualizaciones cada hora.
                     </p>
@@ -953,7 +990,7 @@
             <div class="contact__info">
                 <!-- Title -->
                 <h2 class="contact__title">
-                    ¿Listo para Mover Tu Carga?
+                    COTIZA TU RUTA
                 </h2>
 
                 <!-- Subtitle -->
@@ -961,7 +998,7 @@
                     30 años nos respaldan. Transporte seguro y puntual para tu negocio.
                 </p>
 
-                <!-- Card 1: Solicitar Cotización -->
+                <!-- Card 1: Oficina -->
                 <div class="contact__card">
                     <div class="contact__card-icon">
                         <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
@@ -973,10 +1010,10 @@
                         </svg>
                     </div>
                     <h3 class="contact__card-title">SOLICITAR COTIZACIÓN</h3>
-                    <p class="contact__card-text">Llamar (229) 934-3620</p>
+                    <p class="contact__card-text">Llamar (229) 938 - 1865</p>
                 </div>
 
-                <!-- Card 2: Tiempo de Oficina -->
+                <!-- Card 2: Tráfico -->
                 <div class="contact__card">
                     <div class="contact__card-icon">
                         <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
@@ -986,7 +1023,7 @@
                         </svg>
                     </div>
                     <h3 class="contact__card-title">TIEMPO DE OFICINA</h3>
-                    <p class="contact__card-text">Lunes a Viernes 8AM–6PM | Sábados 9AM–2PM</p>
+                    <p class="contact__card-text">Lunes a Viernes 9AM–6PM | Sábados 9AM–2PM</p>
                 </div>
             </div>
 
@@ -1071,7 +1108,7 @@
                 <article class="process__card">
                     <div class="process__card-image">
                         <img
-                            src="https://placehold.co/320x210/1A8A7A/FFFFFF?text=Cotización"
+                            src="assets/cotiza.jpg"
                             alt="Solicita tu cotización"
                             loading="lazy"
                         />
@@ -1088,7 +1125,7 @@
                 <article class="process__card">
                     <div class="process__card-image">
                         <img
-                            src="https://placehold.co/320x210/1A8A7A/FFFFFF?text=Programación"
+                            src="assets/programa.jpg"
                             alt="Coordinamos tu envío"
                             loading="lazy"
                         />
@@ -1105,7 +1142,7 @@
                 <article class="process__card">
                     <div class="process__card-image">
                         <img
-                            src="https://placehold.co/320x210/1A8A7A/FFFFFF?text=Entrega"
+                            src="assets/entrega.jpg"
                             alt="Entrega confirmada"
                             loading="lazy"
                         />
@@ -1128,8 +1165,8 @@
          FOOTER / CONTACTO SECTION
     ============================================= -->
     <footer class="footer">
-        <div class="footer__background" style="background-image: url('https://placehold.co/1440x800/0F1726/0F1726?text=Terminal+Logística');">
-            <div class="footer__overlay"></div>
+        <div class="footer__background" style="background-image: url('assets/footer-bg.jpg');">
+            <div class="footer__overlay" style="background: linear-gradient(to bottom, rgba(15, 23, 38, 1) 25%, rgba(15, 23, 38, 0.9) 100%, rgba(15, 23, 38, 0.9) 100%);"></div>
         </div>
 
         <div class="footer__container">
@@ -1143,28 +1180,28 @@
                     <p class="footer__contact-bar-text"><b>DIRECCIÓN:</b> Atiende Norte #446, Col. Miguel Alemán, Veracruz, Ver</p>
                 </div>
 
-                <!-- Item 2: Email 1 -->
+                <!-- Item 2: Teléfono Tráfico -->
+                <div class="footer__contact-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
+                        <path d="M6.54 5c.06.89.3 1.76.72 2.54.08.14.05.32-.08.41l-1.44.72c.46 1.29 1.14 2.49 2.02 3.56l.88-1.14c.07-.08.18-.1.28-.05.79.42 1.65.67 2.54.72h.08c.16 0 .29.13.29.29v1.52c0 .16-.13.29-.29.29C9.5 22 2 14.5 2 5.52 2 5.36 2.13 5.23 2.29 5.23h1.52c.16 0 .29.13.29.29.05.89.3 1.75.72 2.54.05.09.03.21-.06.28l-1.44.72z"/>
+                    </svg>
+                    <p class="footer__contact-bar-text"><b>TRÁFICO:</b> (229) 135 - 4342</p>
+                </div>
+
+                <!-- Item 3: Email Tráfico -->
                 <div class="footer__contact-item">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
                         <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                     </svg>
-                    <p class="footer__contact-bar-text"><b>CORREO:</b> ventas@transportesmarmusa.com.mx</p>
+                    <p class="footer__contact-bar-text"><b>CORREO TRÁFICO:</b> trafico1@transportesmarmusa.com.mx</p>
                 </div>
 
-                <!-- Item 3: Email 2 -->
-                <div class="footer__contact-item">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
-                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
-                    <p class="footer__contact-bar-text"><b>CORREO:</b> trafico@transportesmarmusa.com.mx</p>
-                </div>
-
-                <!-- Item 4: Phone -->
+                <!-- Item 4: Ventas -->
                 <div class="footer__contact-item">
                     <svg width="20" height="40" viewBox="0 0 24 24" fill="#F47B20" class="footer__contact-bar-icon">
                         <path d="M6.54 5c.06.89.3 1.76.72 2.54.08.14.05.32-.08.41l-1.44.72c.46 1.29 1.14 2.49 2.02 3.56l.88-1.14c.07-.08.18-.1.28-.05.79.42 1.65.67 2.54.72h.08c.16 0 .29.13.29.29v1.52c0 .16-.13.29-.29.29C9.5 22 2 14.5 2 5.52 2 5.36 2.13 5.23 2.29 5.23h1.52c.16 0 .29.13.29.29.05.89.3 1.75.72 2.54.05.09.03.21-.06.28l-1.44.72z"/>
                     </svg>
-                    <p class="footer__contact-bar-text"><b>TELÉFONO:</b> (229) 934-3620 | (229) 196-0137 | (229) 939-6316</p>
+                    <p class="footer__contact-bar-text"><b>VENTAS:</b> (229) 496 - 2323 | ventas1@transportesmarmusa.com.mx</p>
                 </div>
             </div>
 
@@ -1176,12 +1213,7 @@
                 <!-- Column 1: Newsletter -->
                 <div class="footer__column footer__column--newsletter">
                     <div class="footer__logo">
-                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="4" fill="#1A8A7A"/>
-                            <path d="M8 28V12H12.5L16 20L19.5 12H24V28H20V18L16 26H16L12 18V28H8Z" fill="white"/>
-                            <path d="M26 12H32V16H30V28H26V12Z" fill="white"/>
-                        </svg>
-                        <span>TM Transportes</span>
+                        <img src="assets/logo-marmusa-2.png" alt="Logo Transportes Marmusa" width="130" height="55" />
                     </div>
                     <h4 class="footer__column-title">Nuestro Boletín Informativo</h4>
                     <form class="footer__newsletter" id="newsletterForm">

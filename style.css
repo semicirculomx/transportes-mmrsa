@@ -578,15 +578,17 @@ ul, ol {
     right: 0;
     bottom: 0;
     z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.hero__sky {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 85%;
-    background: var(--color-sky-gradient);
+.hero__sky-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .hero__container {
@@ -687,10 +689,9 @@ ul, ol {
 
 /* Hero Image */
 .hero__image {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100vw;
     position: relative;
+    margin-left: calc((100% - 100vw) / 2);
 }
 
 .hero__truck {
@@ -3019,7 +3020,7 @@ ul, ol {
 .footer {
     position: relative;
     padding: var(--space-6xl) 0;
-    background-color: #0F1726;
+    /*background-color: #0F1726;*/
     overflow: hidden;
 }
 
@@ -3124,7 +3125,7 @@ ul, ol {
     font-size: var(--text-base);
     font-weight: 700;
     color: var(--color-white);
-}
+} 
 
 .footer__column-title {
     font-family: var(--font-body);
